@@ -1,6 +1,3 @@
-var VideoList = window.VideoList;
-var VideoPlayer = window.VideoPlayer;
-
 class App extends React.Component {
   constructor (props) {
     super(props);
