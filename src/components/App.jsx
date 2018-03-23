@@ -12,7 +12,7 @@ class App extends React.Component {
     const search = _.debounce(window.searchYouTube.bind(this), 500);
     const cb = (videos) => { 
       this.setState({videos: videos, currentVideo: videos[0]});
-    }
+    };
     search(options, cb);
   }
   componentDidMount() {

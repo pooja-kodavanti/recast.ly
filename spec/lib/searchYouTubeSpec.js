@@ -1,5 +1,4 @@
 var getURLSearchParams = function(url) {
-console.log('url', url);
   return url
     .split('?')[1]
     .split('&')
