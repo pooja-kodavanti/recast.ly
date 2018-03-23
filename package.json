@@ -10,7 +10,7 @@
     "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash",
     "transpile": "babel . --out-dir compiled --presets=env,react --ignore=node_modules,compiled --source-maps inline",
     "start": "live-server --open=./ --port=8081",
-    "watch": " babel ./ --watch --out-dir compiled --ignore ./node_modules/",
+    "watch": "babel . --out-dir compiled --presets=env,react --ignore=node_modules,compiled --source-maps inline --watch",
     "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash"
   },
 

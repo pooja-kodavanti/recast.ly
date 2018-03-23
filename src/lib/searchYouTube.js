@@ -8,6 +8,7 @@ var searchYouTube = (options, callback) => {
       data: {
         q: options.query,
         key: options.key,
+        maxResults: options.max,
         max: options.max,
         type: 'video',
         part: 'snippet'
@@ -25,5 +26,3 @@ var searchYouTube = (options, callback) => {
 
 window.searchYouTube = searchYouTube;
 
-// https://www.googleapis.com/youtube/v3/search?query=react&key=AIzaSyAr6yOt7TKvwHpFoLjR0t9Wd_MINo-Tu1A&max=5&type=video
-// ?query=' + options.query + '&key=' + options.key + '&max=' + options.max + '&type=video';
